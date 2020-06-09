@@ -2,7 +2,9 @@
 Apache Shiro是一个强大且可扩展的安全框架。Shiro可以帮助我们在J2SE和J2EE环境中完成：认证、授权、加密、会话管理、与Web集成、缓存等功能。
 
 Shiro的主要功能点如下图：
+
 ![ShiroFeature](../../images/shiro/ShiroFeatures.png)
+
 - Authentication : 身份认证，验证用户是否拥有相应的身份
 - Authorization : 权限验证，判定用户是否拥有某个权限
 - Session Manager: 会话管理，在非Web及EJB环境中同样适用
@@ -22,7 +24,9 @@ Shiro的主要功能点如下图：
 对于一个好的框架而言，外部架构应该表现为具有简单且明确的API；内部架构应该具备可扩展性（因为任何框架都不能满足所有场景）
 ### 外部架构
 我们可以从外部架构看到应用程序如何集成Shiro:
+
 ![ShiroOutArchitechture](../../images/shiro/shiro-out-architecture.png)
+
 可以看到应用程序直接交互的对象是Subject API。
 
 - Subject: 主体，可与应用交互的“用户”。所有的Subject都绑定到SecurityManager，且通过SecurityManager执行相应的操作，相当于是一个门面设计模式。
