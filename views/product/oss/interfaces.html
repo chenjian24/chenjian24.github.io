@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>接口定义 | 公共服务基础平台</title>
+    <meta name="generator" content="VuePress 1.5.1">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icon_vuepress_reco.png">
+    <link rel="mask-icon" href="/icon_vuepress_reco.svg" color="#42b983">
+    <script ata-ad-client="ca-pub-5123799675896802" async="async" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="description" content="E-PBOS-FRAME">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="keywords" content="vuepress,reco,reco_luan,vuepress-reco,vuepress-theme-reco,theme,blog,主题">
+    <meta name="theme-color" content="#42b983">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icon_vuepress_reco.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <link rel="preload" href="/assets/css/0.styles.8f9d3113.css" as="style"><link rel="preload" href="/assets/js/app.6770edd9.js" as="script"><link rel="preload" href="/assets/js/6.9b59ca2d.js" as="script"><link rel="preload" href="/assets/js/1.74e43295.js" as="script"><link rel="preload" href="/assets/js/57.ae58b540.js" as="script"><link rel="preload" href="/assets/js/21.ce6f9c93.js" as="script"><link rel="prefetch" href="/assets/js/10.9234862f.js"><link rel="prefetch" href="/assets/js/11.faaf2a0b.js"><link rel="prefetch" href="/assets/js/12.99d8a8e1.js"><link rel="prefetch" href="/assets/js/13.a0de6678.js"><link rel="prefetch" href="/assets/js/14.88f1efe8.js"><link rel="prefetch" href="/assets/js/15.7c74cd9c.js"><link rel="prefetch" href="/assets/js/16.def86b44.js"><link rel="prefetch" href="/assets/js/17.c8f0c21a.js"><link rel="prefetch" href="/assets/js/18.461f5c76.js"><link rel="prefetch" href="/assets/js/19.6d47cd50.js"><link rel="prefetch" href="/assets/js/2.d40390da.js"><link rel="prefetch" href="/assets/js/20.47ae4efd.js"><link rel="prefetch" href="/assets/js/22.9a8ea2ec.js"><link rel="prefetch" href="/assets/js/23.a35aab38.js"><link rel="prefetch" href="/assets/js/24.a3da70e8.js"><link rel="prefetch" href="/assets/js/25.6fd36c0f.js"><link rel="prefetch" href="/assets/js/26.c3b95b33.js"><link rel="prefetch" href="/assets/js/27.b213690e.js"><link rel="prefetch" href="/assets/js/28.2a881680.js"><link rel="prefetch" href="/assets/js/29.3615d5ab.js"><link rel="prefetch" href="/assets/js/30.0de7762e.js"><link rel="prefetch" href="/assets/js/31.989af7ea.js"><link rel="prefetch" href="/assets/js/32.d524aa2a.js"><link rel="prefetch" href="/assets/js/33.c6a9e36e.js"><link rel="prefetch" href="/assets/js/34.0783e803.js"><link rel="prefetch" href="/assets/js/35.213a1255.js"><link rel="prefetch" href="/assets/js/36.6077013d.js"><link rel="prefetch" href="/assets/js/37.b8216631.js"><link rel="prefetch" href="/assets/js/38.878e0d98.js"><link rel="prefetch" href="/assets/js/39.6e4dd783.js"><link rel="prefetch" href="/assets/js/40.fd742953.js"><link rel="prefetch" href="/assets/js/41.702f2e53.js"><link rel="prefetch" href="/assets/js/42.5ac74078.js"><link rel="prefetch" href="/assets/js/43.d8aa62e2.js"><link rel="prefetch" href="/assets/js/44.3ff08b41.js"><link rel="prefetch" href="/assets/js/45.835c788f.js"><link rel="prefetch" href="/assets/js/46.f00789b6.js"><link rel="prefetch" href="/assets/js/47.b77c819c.js"><link rel="prefetch" href="/assets/js/48.cb7cb28a.js"><link rel="prefetch" href="/assets/js/49.3788de49.js"><link rel="prefetch" href="/assets/js/50.e1de5569.js"><link rel="prefetch" href="/assets/js/51.4d363665.js"><link rel="prefetch" href="/assets/js/52.81ee51c4.js"><link rel="prefetch" href="/assets/js/53.eadf5abb.js"><link rel="prefetch" href="/assets/js/54.16615147.js"><link rel="prefetch" href="/assets/js/55.d2180f39.js"><link rel="prefetch" href="/assets/js/56.ab4a6c6f.js"><link rel="prefetch" href="/assets/js/58.f0f103e7.js"><link rel="prefetch" href="/assets/js/59.185baa8b.js"><link rel="prefetch" href="/assets/js/60.42f0a857.js"><link rel="prefetch" href="/assets/js/61.855abd61.js"><link rel="prefetch" href="/assets/js/62.228f6b74.js"><link rel="prefetch" href="/assets/js/63.748c4f7a.js"><link rel="prefetch" href="/assets/js/64.1ecf4db2.js"><link rel="prefetch" href="/assets/js/65.bd945995.js"><link rel="prefetch" href="/assets/js/66.af7378f6.js"><link rel="prefetch" href="/assets/js/67.240009ce.js"><link rel="prefetch" href="/assets/js/68.5a349729.js"><link rel="prefetch" href="/assets/js/69.f9e4dfb1.js"><link rel="prefetch" href="/assets/js/7.0d9ac290.js"><link rel="prefetch" href="/assets/js/70.3445e97c.js"><link rel="prefetch" href="/assets/js/71.4ba5fd2a.js"><link rel="prefetch" href="/assets/js/72.4bfb1329.js"><link rel="prefetch" href="/assets/js/73.41f803c6.js"><link rel="prefetch" href="/assets/js/74.4e9e8a78.js"><link rel="prefetch" href="/assets/js/8.873f1ca0.js"><link rel="prefetch" href="/assets/js/9.10a0bb51.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.ff70839f.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.5e3c5f33.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8f9d3113.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-aa36da2e><div data-v-aa36da2e><div id="loader-wrapper" class="loading-wrapper" data-v-71fac282 data-v-aa36da2e data-v-aa36da2e><div class="loader-main" data-v-71fac282><div data-v-71fac282></div><div data-v-71fac282></div><div data-v-71fac282></div><div data-v-71fac282></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-441c6d28 data-v-aa36da2e data-v-aa36da2e><h3 class="title" style="display:none;" data-v-441c6d28 data-v-441c6d28>公共服务基础平台</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-441c6d28 data-v-441c6d28><input type="password" value="" data-v-441c6d28> <span data-v-441c6d28>Konck! Knock!</span> <button data-v-441c6d28>OK</button></label> <div class="footer" style="display:none;" data-v-441c6d28 data-v-441c6d28><span data-v-441c6d28><i class="iconfont reco-theme" data-v-441c6d28></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-441c6d28>vuePress-theme-reco</a></span> <span data-v-441c6d28><i class="iconfont reco-copyright" data-v-441c6d28></i> <a data-v-441c6d28><!---->
+            
+          <!---->
+          2020
+        </a></span></div></div> <div class="hide" data-v-aa36da2e><header class="navbar" data-v-aa36da2e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">公共服务基础平台</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <form id="search-form" role="search" class="algolia-search-wrapper search-box"><i class="iconfont reco-search"></i> <input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont undefined"></i>
+  首页
+</a></div><div class="nav-item"><a href="/views/starter/quickstart.html" class="nav-link"><i class="iconfont undefined"></i>
+  开发指南
+</a></div><div class="nav-item"><a href="/views/api/summary.html" class="nav-link"><i class="iconfont undefined"></i>
+  API文档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      通用组件
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/views/product/oss/index.html" class="nav-link"><i class="iconfont undefined"></i>
+  统一对象存储服务接口
+</a></li><li class="dropdown-item"><!----> <a href="/views/product/osg/eposg.html" class="nav-link"><i class="iconfont undefined"></i>
+  服务开放网关
+</a></li><li class="dropdown-item"><!----> <a href="/views/product/workflow/dashboard.html" class="nav-link"><i class="iconfont undefined"></i>
+  流程组件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      专题
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/views/subject/standard/dashboard.html" class="nav-link"><i class="iconfont undefined"></i>
+  开发规范
+</a></li><li class="dropdown-item"><!----> <a href="/views/subject/security/dashboard.html" class="nav-link"><i class="iconfont undefined"></i>
+  安全专题
+</a></li></ul></div></div><div class="nav-item"><a href="/views/releasenotes/dashboard.html" class="nav-link"><i class="iconfont undefined"></i>
+  发布日志
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      服务支持
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/views/support/tools/dev.html" class="nav-link"><i class="iconfont undefined"></i>
+  开发工具
+</a></li><li class="dropdown-item"><!----> <a href="/views/support/faq.html" class="nav-link"><i class="iconfont undefined"></i>
+  常见问题
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-aa36da2e></div> <aside class="sidebar" data-v-aa36da2e><div class="personal-info-wrapper" data-v-b257e8f6><!----> <!----> <div class="num" data-v-b257e8f6><div data-v-b257e8f6><h3 data-v-b257e8f6>0</h3> <h6 data-v-b257e8f6>文章</h6></div> <div data-v-b257e8f6><h3 data-v-b257e8f6>0</h3> <h6 data-v-b257e8f6>标签</h6></div></div> <hr data-v-b257e8f6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont undefined"></i>
+  首页
+</a></div><div class="nav-item"><a href="/views/starter/quickstart.html" class="nav-link"><i class="iconfont undefined"></i>
+  开发指南
+</a></div><div class="nav-item"><a href="/views/api/summary.html" class="nav-link"><i class="iconfont undefined"></i>
+  API文档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      通用组件
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/views/product/oss/index.html" class="nav-link"><i class="iconfont undefined"></i>
+  统一对象存储服务接口
+</a></li><li class="dropdown-item"><!----> <a href="/views/product/osg/eposg.html" class="nav-link"><i class="iconfont undefined"></i>
+  服务开放网关
+</a></li><li class="dropdown-item"><!----> <a href="/views/product/workflow/dashboard.html" class="nav-link"><i class="iconfont undefined"></i>
+  流程组件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      专题
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/views/subject/standard/dashboard.html" class="nav-link"><i class="iconfont undefined"></i>
+  开发规范
+</a></li><li class="dropdown-item"><!----> <a href="/views/subject/security/dashboard.html" class="nav-link"><i class="iconfont undefined"></i>
+  安全专题
+</a></li></ul></div></div><div class="nav-item"><a href="/views/releasenotes/dashboard.html" class="nav-link"><i class="iconfont undefined"></i>
+  发布日志
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      服务支持
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/views/support/tools/dev.html" class="nav-link"><i class="iconfont undefined"></i>
+  开发工具
+</a></li><li class="dropdown-item"><!----> <a href="/views/support/faq.html" class="nav-link"><i class="iconfont undefined"></i>
+  常见问题
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>统一对象存储服务接口1</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/product/oss/" aria-current="page" class="sidebar-link">简介</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>快速入门</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/product/oss/interfaces.html" aria-current="page" class="active sidebar-link">接口定义</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/product/oss/interfaces.html#约束定义" class="sidebar-link">约束定义</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/product/oss/interfaces.html#桶名称命名规范" class="sidebar-link">桶名称命名规范</a></li><li class="sidebar-sub-header"><a href="/views/product/oss/interfaces.html#对象唯一关键字命名规范" class="sidebar-link">对象唯一关键字命名规范</a></li><li class="sidebar-sub-header"><a href="/views/product/oss/interfaces.html#统一返回定义" class="sidebar-link">统一返回定义</a></li></ul></li><li class="sidebar-sub-header"><a href="/views/product/oss/interfaces.html#接口定义" class="sidebar-link">接口定义</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/product/oss/interfaces.html#桶管理" class="sidebar-link">桶管理</a></li><li class="sidebar-sub-header"><a href="/views/product/oss/interfaces.html#对象操作" class="sidebar-link">对象操作</a></li></ul></li></ul></li><li><a href="/views/product/oss/localfile.html" class="sidebar-link">本地文件系统接入</a></li><li><a href="/views/product/oss/gridFS.html" class="sidebar-link">MongoDB-GridFS接入</a></li><li><a href="/views/product/oss/minio.html" class="sidebar-link">MinIO接入</a></li><li><a href="/views/product/oss/s3.html" class="sidebar-link">S3接入</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>进阶使用</span> <!----></p> <!----></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>更新日志</span> <!----></p> <!----></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>常见问题</span> <!----></p> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-441c6d28 data-v-aa36da2e><h3 class="title" style="display:none;" data-v-441c6d28 data-v-441c6d28>接口定义</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-441c6d28 data-v-441c6d28><input type="password" value="" data-v-441c6d28> <span data-v-441c6d28>Konck! Knock!</span> <button data-v-441c6d28>OK</button></label> <div class="footer" style="display:none;" data-v-441c6d28 data-v-441c6d28><span data-v-441c6d28><i class="iconfont reco-theme" data-v-441c6d28></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-441c6d28>vuePress-theme-reco</a></span> <span data-v-441c6d28><i class="iconfont reco-copyright" data-v-441c6d28></i> <a data-v-441c6d28><!---->
+            
+          <!---->
+          2020
+        </a></span></div></div> <div data-v-aa36da2e><main class="page"><div class="page-title" style="display:none;"><h1>接口定义</h1> <hr> <div data-v-ffe4abec><!----> <i class="iconfont reco-date" data-v-ffe4abec><span data-v-ffe4abec>2020-06-10</span></i> <i class="iconfont reco-eye" data-v-ffe4abec><span id="/views/product/oss/interfaces.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-ffe4abec><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <!----></div></div> <div class="theme-reco-content content__default" style="display:none;"><h2 id="约束定义"><a href="#约束定义" class="header-anchor">#</a> 约束定义</h2> <h3 id="桶名称命名规范"><a href="#桶名称命名规范" class="header-anchor">#</a> 桶名称命名规范</h3> <p>遵循S3标准协议:</p> <ul><li>存储桶名称的长度介于 3 和 63 个字符之间，并且只能包含小写字母、数字、句点和短划线。</li> <li>存储桶名称中的每个标签必须以小写字母或数字开头。</li> <li>存储桶名称不能包含下划线、以短划线结束、包含连续句点或在句点旁边使用短划线。</li> <li>存储桶名称不能采用 IP 地址格式 (198.51.100.24)。</li></ul> <h3 id="对象唯一关键字命名规范"><a href="#对象唯一关键字命名规范" class="header-anchor">#</a> 对象唯一关键字命名规范</h3> <p>遵循S3标准协议。</p> <ul><li>同 桶名称 定义</li> <li>下列字符因为需要进行大量的特殊处理才能在所有应用程序间保持一致性，所以建议直接避免使用。需要避免的字符如下：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>`	^	&quot;	\
+{	}	[	]
+~	%	#	|
+&gt;	&lt;	ASCII 
+128-255 十进制	
+</code></pre></div><h3 id="统一返回定义"><a href="#统一返回定义" class="header-anchor">#</a> 统一返回定义</h3> <p>返回参数说明</p> <table><thead><tr><th>参数</th> <th>类型</th> <th>说明</th></tr></thead> <tbody><tr><td>retCode</td> <td>int</td> <td>返回代码(&gt;=0代表成功，-1代表失败)应用可以通过此代码确认是否调用成功</td></tr> <tr><td>retValue</td> <td>T</td> <td>返回引擎返回的值(实际接口返回对象)</td></tr> <tr><td>excepInfo</td> <td>ExcepInfo</td> <td>异常信息</td></tr></tbody></table> <p>ExcepInfo 对象</p> <table><thead><tr><th>参数</th> <th>类型</th> <th>说明</th></tr></thead> <tbody><tr><td>errorCode</td> <td>String</td> <td>异常代码</td></tr> <tr><td>errorMsg</td> <td>String</td> <td>异常信息</td></tr></tbody></table> <h2 id="接口定义"><a href="#接口定义" class="header-anchor">#</a> 接口定义</h2> <h3 id="桶管理"><a href="#桶管理" class="header-anchor">#</a> 桶管理</h3> <h4 id="创建桶"><a href="#创建桶" class="header-anchor">#</a> 创建桶</h4> <ul><li><p>创建存储对象的桶</p> <ul><li>创建时必须指定桶名称，桶名称不允许重复</li> <li>桶名称符合命名规范</li></ul></li> <li><p>接口：<code>com.shine.oss.OSSService#createBucket</code></p></li></ul> <div class="language-java extra-class"><pre class="language-java"><code>	<span class="token comment">/**
+	 * 创建存储桶
+	 * 
+	 * @param bucketName 桶名称
+	 * @return
+	 */</span>
+	<span class="token keyword">public</span> <span class="token class-name">RetObject</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Boolean</span><span class="token punctuation">&gt;</span></span> <span class="token function">createBucket</span><span class="token punctuation">(</span><span class="token class-name">String</span> bucketName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>输入参数</li></ul> <table><thead><tr><th>参数</th> <th>类型</th> <th>是否必须</th> <th>说明</th></tr></thead> <tbody><tr><td>bucketName</td> <td>String</td> <td>是</td> <td>桶名称</td></tr></tbody></table> <p>返回参数说明</p> <table><thead><tr><th>参数</th> <th>类型</th> <th>说明</th></tr></thead> <tbody><tr><td>-</td> <td>Boolean</td> <td>true：创建成功, false: 创建失败</td></tr></tbody></table> <h4 id="删除桶"><a href="#删除桶" class="header-anchor">#</a> 删除桶</h4> <ul><li><p>删除存储对象的桶。</p> <ul><li>删除时必须指定桶名称</li> <li>桶名称不允许为空</li> <li>桶名称符合命名规范</li></ul></li> <li><p>接口：<code>com.shine.oss.OSSService#removeBucket</code></p></li></ul> <div class="language-java extra-class"><pre class="language-java"><code>	<span class="token comment">/**
+	 * 删除存储桶
+	 *
+	 * @param bucketName 桶名称
+	 * @return
+	 */</span>
+	<span class="token keyword">public</span> <span class="token class-name">RetObject</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Boolean</span><span class="token punctuation">&gt;</span></span> <span class="token function">removeBucket</span><span class="token punctuation">(</span><span class="token class-name">String</span> bucketName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>输入参数</li></ul> <table><thead><tr><th>参数</th> <th>类型</th> <th>是否必须</th> <th>说明</th></tr></thead> <tbody><tr><td>bucketName</td> <td>String</td> <td>是</td> <td>桶名称</td></tr></tbody></table> <ul><li>返回参数说明</li></ul> <table><thead><tr><th>参数</th> <th>类型</th> <th>说明</th></tr></thead> <tbody><tr><td>-</td> <td>Boolean</td> <td>true：删除成功, false: 删除失败</td></tr></tbody></table> <h4 id="判断桶是否存在"><a href="#判断桶是否存在" class="header-anchor">#</a> 判断桶是否存在</h4> <ul><li><p>判定桶是否存在</p> <ul><li>桶名称符合命名规范</li></ul></li> <li><p>接口：<code>com.shine.oss.OSSService#bucketExists</code></p></li></ul> <div class="language-java extra-class"><pre class="language-java"><code>	<span class="token comment">/**
+	 * 判断桶是否存在
+	 * 
+	 * @param bucketName 桶名称
+	 * @return
+	 */</span>
+	<span class="token keyword">public</span> <span class="token class-name">RetObject</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Boolean</span><span class="token punctuation">&gt;</span></span> <span class="token function">bucketExists</span><span class="token punctuation">(</span><span class="token class-name">String</span> bucketName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>输入参数</li></ul> <table><thead><tr><th>参数</th> <th>类型</th> <th>是否必须</th> <th>说明</th></tr></thead> <tbody><tr><td>bucketName</td> <td>String</td> <td>是</td> <td>桶名称</td></tr></tbody></table> <ul><li>返回参数说明</li></ul> <table><thead><tr><th>参数</th> <th>类型</th> <th>说明</th></tr></thead> <tbody><tr><td>-</td> <td>Boolean</td> <td>true：桶存在, false: 桶不存在</td></tr></tbody></table> <h4 id="检索桶"><a href="#检索桶" class="header-anchor">#</a> 检索桶</h4> <ul><li>检索存在的桶
+<ul><li>根据桶名称检索，返回是否存在</li> <li>支持桶名称为空，为空时返回前200条桶名称信息</li></ul></li> <li>接口：<code>com.shine.oss.OSSService#listBuckets</code></li></ul> <div class="language-java extra-class"><pre class="language-java"><code>	<span class="token comment">/**
+	 * 获取存储桶列表，默认取前200笔记录。
+	 * 
+	 * @return
+	 */</span>
+	<span class="token keyword">public</span>  <span class="token class-name">RetObject</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">List</span><span class="token punctuation">&lt;</span><span class="token class-name">BucketInfo</span><span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span></span> <span class="token function">listBuckets</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token comment">/**
+	 * 获取存储桶列表(分页)
+	 * 
+	 * @param offset 偏移值
+	 * @param limit 长度
+	 * @return
+	 */</span>
+	<span class="token keyword">public</span>  <span class="token class-name">RetObject</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">List</span><span class="token punctuation">&lt;</span><span class="token class-name">BucketInfo</span><span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span></span> <span class="token function">listBuckets</span><span class="token punctuation">(</span><span class="token keyword">int</span> offset<span class="token punctuation">,</span><span class="token keyword">int</span> limit<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li><p>输入参数
+| 参数 | 类型 | 是否必须 | 说明 |
+| --- | --- |--- | --- |
+| offset | int | 重载,指定方法必须 | 偏移值（从0起） |
+| limit |int | 重载,指定方法必须 | 长度 |</p></li> <li><p>返回参数说明</p></li></ul> <div class="language-java extra-class"><pre class="language-java"><code><span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">BucketInfo</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>BucketInfo参数说明</p> <table><thead><tr><th>参数</th> <th>类型</th> <th>说明</th></tr></thead> <tbody><tr><td>name</td> <td>String</td> <td>桶名称</td></tr> <tr><td>createDate</td> <td>Date</td> <td>桶创建时间</td></tr></tbody></table> <h3 id="对象操作"><a href="#对象操作" class="header-anchor">#</a> 对象操作</h3> <h4 id="添加对象"><a href="#添加对象" class="header-anchor">#</a> 添加对象</h4> <ul><li><p>在指定的存储桶下添加对象</p> <ul><li>指定桶名称、对象唯一关键字、对象。均不允许为空</li> <li>不允许在一个桶下，添加两个唯一关键字相同的对象</li> <li>桶名称符合命名规范</li> <li>对象唯一关键字符合命名规范</li></ul></li> <li><p>接口：<code>com.shine.oss.OSSService#createBucket</code></p></li></ul> <div class="language-java extra-class"><pre class="language-java"><code>	<span class="token comment">/**
+	 * 上传数据对象
+	 * 
+	 * @param bucketName    目标桶的名称
+	 * @param key           上传对象的object key
+	 * @param filename      对象的原始文件名
+	 * @param objectContent 对象的数据
+	 * @return
+	 */</span>
+   <span class="token keyword">public</span> <span class="token class-name">RetObject</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">ObjectInfo</span><span class="token punctuation">&gt;</span></span> <span class="token function">putObject</span><span class="token punctuation">(</span><span class="token class-name">String</span> bucketName<span class="token punctuation">,</span> <span class="token class-name">String</span> key<span class="token punctuation">,</span> <span class="token class-name">String</span> filename<span class="token punctuation">,</span> <span class="token keyword">final</span> <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> objectContent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment">/**
+	 * 上传指定文件
+	 * 
+	 * @param bucketName 目标桶的名称
+	 * @param key        上传对象的object key
+	 * @param source     源文件
+	 * @return
+	 */</span>
+   <span class="token keyword">public</span> <span class="token class-name">RetObject</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">ObjectInfo</span><span class="token punctuation">&gt;</span></span> <span class="token function">putObject</span><span class="token punctuation">(</span><span class="token class-name">String</span> bucketName<span class="token punctuation">,</span> <span class="token class-name">String</span> key<span class="token punctuation">,</span> <span class="token keyword">final</span> <span class="token class-name">File</span> source<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment">/**
+	 * 从指定的输入流，上传对象。
+	 * 
+	 * @param bucketName 目标桶的名称
+	 * @param key        上传对象的object key
+	 * @param filename   源文件名
+	 * @param from       源数据输入流
+	 */</span>
+   <span class="token keyword">public</span> <span class="token class-name">RetObject</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">ObjectInfo</span><span class="token punctuation">&gt;</span></span> <span class="token function">putObject</span><span class="token punctuation">(</span><span class="token class-name">String</span> bucketName<span class="token punctuation">,</span> <span class="token class-name">String</span> key<span class="token punctuation">,</span> <span class="token class-name">String</span> filename<span class="token punctuation">,</span> <span class="token keyword">final</span> <span class="token class-name">InputStream</span> from<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><ul><li>输入参数</li></ul> <table><thead><tr><th>参数</th> <th>类型</th> <th>是否必须</th> <th>说明</th></tr></thead> <tbody><tr><td>bucketName</td> <td>String</td> <td>是</td> <td>桶名称</td></tr> <tr><td>key</td> <td>String</td> <td>是</td> <td>上传对象的object key</td></tr> <tr><td>source</td> <td>File</td> <td>重载,指定方法必须</td> <td>源文件</td></tr> <tr><td>filename</td> <td>String</td> <td>重载,指定方法必须</td> <td>对象的原始文件名</td></tr> <tr><td>objectContent</td> <td>byte[]</td> <td>重载,指定方法必须</td> <td>对象的数据</td></tr> <tr><td>from</td> <td>InputStream</td> <td>重载,指定方法必须</td> <td>源数据输入流</td></tr></tbody></table> <ul><li>返回参数说明</li></ul> <table><thead><tr><th>参数</th> <th>类型</th> <th>说明</th></tr></thead> <tbody><tr><td>bucket</td> <td>String</td> <td>桶名称</td></tr> <tr><td>key</td> <td>String</td> <td>对象的object key</td></tr> <tr><td>name</td> <td>String</td> <td>对象名称</td></tr> <tr><td>contentSize</td> <td>long</td> <td>对象大小</td></tr> <tr><td>contentType</td> <td>String</td> <td>对象类型</td></tr> <tr><td>lastModify</td> <td>Date</td> <td>对象最后修改时间</td></tr></tbody></table> <h4 id="获取对象元数据信息"><a href="#获取对象元数据信息" class="header-anchor">#</a> 获取对象元数据信息</h4> <ul><li><p>获取指定对象（文件）的元数据信息</p></li> <li><p>接口：<code>com.shine.oss.OSSService#getObjectInfo</code></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>	/**
+	 * 获取指定对象（文件）的元数据信息
+	 * 
+	 * @param bucketName 桶名称
+	 * @param key 上传对象的object key
+	 * @return 对象元数据信息
+	 */
+   public RetObject&lt;ObjectInfo&gt; getObjectInfo(String bucketName, String key);
+</code></pre></div><ul><li>输入参数</li></ul> <table><thead><tr><th>参数</th> <th>类型</th> <th>是否必须</th> <th>说明</th></tr></thead> <tbody><tr><td>bucketName</td> <td>String</td> <td>是</td> <td>桶名称</td></tr> <tr><td>key</td> <td>String</td> <td>是</td> <td>上传对象的object key</td></tr></tbody></table> <ul><li>返回参数说明</li></ul> <table><thead><tr><th>参数</th> <th>类型</th> <th>说明</th></tr></thead> <tbody><tr><td>bucket</td> <td>String</td> <td>桶名称</td></tr> <tr><td>key</td> <td>String</td> <td>对象的object key</td></tr> <tr><td>name</td> <td>String</td> <td>对象名称</td></tr> <tr><td>contentSize</td> <td>long</td> <td>对象大小</td></tr> <tr><td>contentType</td> <td>String</td> <td>对象类型</td></tr> <tr><td>lastModify</td> <td>Date</td> <td>对象最后修改时间</td></tr></tbody></table> <h4 id="获取对象"><a href="#获取对象" class="header-anchor">#</a> 获取对象</h4> <ul><li>获取桶下指定的对象。
+<ul><li>根据桶名称、对象唯一关键字获取对应的对象。</li> <li>桶名称符合命名规范。</li> <li>对象唯一关键字符合命名规范。</li> <li>使用后需主动关闭流对象</li></ul></li> <li>接口：<code>com.shine.oss.OSSService#getObject</code></li></ul> <div class="language-java extra-class"><pre class="language-java"><code>	<span class="token comment">/**
+	 * 获取指定对象（文件）的输入流（读取对象信息） 在使用后，请关闭InputStream
+	 * 
+	 * @param bucketName 桶名称
+	 * @param key 上传对象的object key
+	 * @return 对象信息
+	 */</span>
+   <span class="token keyword">public</span> <span class="token class-name">RetObject</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">OSSObject</span><span class="token punctuation">&gt;</span></span> <span class="token function">getObject</span><span class="token punctuation">(</span><span class="token class-name">String</span> bucketName<span class="token punctuation">,</span> <span class="token class-name">String</span> key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+   <span class="token comment">/**
+	 * 获取指定对象（文件）,写入到目标文件（客户端本地）
+	 * 
+	 * @param bucketName 桶名称
+	 * @param key 上传对象的object key
+	 * @param target 输出文件
+	 * @return 是否获取成功
+	 */</span>
+   <span class="token keyword">public</span> <span class="token class-name">RetObject</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Boolean</span><span class="token punctuation">&gt;</span></span> <span class="token function">getObject</span><span class="token punctuation">(</span><span class="token class-name">String</span> bucketName<span class="token punctuation">,</span> <span class="token class-name">String</span> key<span class="token punctuation">,</span> <span class="token keyword">final</span> <span class="token class-name">File</span> target<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+   <span class="token comment">/**
+	 * 获取（下载）指定的对象（文件）数据，将输出流作为目标，写入数据
+	 * 
+	 * @param bucketName 桶名称
+	 * @param key 上传对象的object key
+	 * @param to 指定输出流
+	 * @return 是否获取成功
+	 */</span>
+   <span class="token keyword">public</span> <span class="token class-name">RetObject</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Boolean</span><span class="token punctuation">&gt;</span></span> <span class="token function">getObject</span><span class="token punctuation">(</span><span class="token class-name">String</span> bucketName<span class="token punctuation">,</span> <span class="token class-name">String</span> key<span class="token punctuation">,</span> <span class="token keyword">final</span> <span class="token class-name">OutputStream</span> <span class="token keyword">to</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>输入参数</li></ul> <table><thead><tr><th>参数</th> <th>类型</th> <th>是否必须</th> <th>说明</th></tr></thead> <tbody><tr><td>bucketName</td> <td>String</td> <td>是</td> <td>桶名称</td></tr> <tr><td>key</td> <td>String</td> <td>是</td> <td>上传对象的object key</td></tr> <tr><td>target</td> <td>File</td> <td>重载,指定方法必须</td> <td>指定输出文件</td></tr> <tr><td>to</td> <td>OutputStream</td> <td>重载,指定方法必须</td> <td>指定输出流</td></tr></tbody></table> <ul><li>返回参数说明</li></ul> <p>OSSObject 参数说明</p> <table><thead><tr><th>参数</th> <th>类型</th> <th>说明</th></tr></thead> <tbody><tr><td>bucket</td> <td>String</td> <td>桶名称</td></tr> <tr><td>key</td> <td>String</td> <td>对象的object key</td></tr> <tr><td>name</td> <td>String</td> <td>对象名称</td></tr> <tr><td>contentSize</td> <td>long</td> <td>对象大小</td></tr> <tr><td>contentType</td> <td>String</td> <td>对象类型</td></tr> <tr><td>lastModify</td> <td>Date</td> <td>对象最后修改时间</td></tr> <tr><td>objectInputStream</td> <td>InputStream</td> <td>对象内容InputStream</td></tr></tbody></table> <h4 id="删除对象"><a href="#删除对象" class="header-anchor">#</a> 删除对象</h4> <ul><li><p>删除指定存储桶下的对象。</p> <ul><li>根据桶名称及对象唯一关键字删除对象。</li> <li>桶名称与对象唯一关键字不允许为空。</li> <li>对象唯一关键字符合命名规范。</li> <li>桶名称符合命名规范。</li></ul></li> <li><p>接口：<code>com.shine.oss.OSSService#deleteObject</code></p></li></ul> <div class="language-java extra-class"><pre class="language-java"><code>	<span class="token comment">/**
+	 * 删除指定对象
+	 * 
+	 * @param bucketName 桶的名称
+	 * @param key 上传对象的object key
+	 */</span>
+   <span class="token keyword">public</span> <span class="token class-name">RetObject</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Boolean</span><span class="token punctuation">&gt;</span></span> <span class="token function">deleteObject</span><span class="token punctuation">(</span><span class="token class-name">String</span> bucketName<span class="token punctuation">,</span> <span class="token class-name">String</span> key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><ul><li>输入参数</li></ul> <table><thead><tr><th>参数</th> <th>类型</th> <th>是否必须</th> <th>说明</th></tr></thead> <tbody><tr><td>bucketName</td> <td>String</td> <td>是</td> <td>桶名称</td></tr> <tr><td>key</td> <td>String</td> <td>是</td> <td>上传对象的object key</td></tr></tbody></table> <ul><li>返回参数说明</li></ul> <table><thead><tr><th>参数</th> <th>类型</th> <th>说明</th></tr></thead> <tbody><tr><td>-</td> <td>Boolean</td> <td>true: 删除对象成功 false： 删除对象失败</td></tr></tbody></table> <h4 id="检索对象"><a href="#检索对象" class="header-anchor">#</a> 检索对象</h4> <ul><li>检索指定桶下的对象
+<ul><li>支持桶名称及唯一关键字进行检索。返回是否存在的信息</li> <li>支持桶名称不为空、唯一关键字为空时，返回桶中的前200笔对象名称</li> <li>支持检索数据按页返回，未指定分页的情况下，最大返回200笔记录</li> <li>对象唯一关键字符合命名规范</li> <li>桶名称符合命名规范</li></ul></li> <li>接口：<code>com.shine.oss.OSSService#listObjects</code></li></ul> <div class="language-java extra-class"><pre class="language-java"><code>	<span class="token comment">/**
+	 * 列出桶里面的对象列表 默认返回200条记录
+	 * 
+	 * @param bucketName 桶名称
+	 * @return 对象列表
+	 */</span>
+	<span class="token keyword">public</span> <span class="token class-name">RetObject</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">List</span><span class="token punctuation">&lt;</span><span class="token class-name">ObjectInfo</span><span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span></span> <span class="token function">listObjects</span><span class="token punctuation">(</span><span class="token class-name">String</span> bucketName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment">/**
+	 * 列出桶里面的对象列表 根据设定的位移和记录数限制返回 最大上限不超过200条记录
+	 * 
+	 * @param bucketName 桶名称
+	 * @param offset 偏移值
+	 * @param limit 长度
+	 * @return
+	 */</span>
+	<span class="token keyword">public</span> <span class="token class-name">RetObject</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">List</span><span class="token punctuation">&lt;</span><span class="token class-name">ObjectInfo</span><span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span></span> <span class="token function">listObjects</span><span class="token punctuation">(</span><span class="token class-name">String</span> bucketName<span class="token punctuation">,</span> <span class="token keyword">int</span> offset<span class="token punctuation">,</span> <span class="token keyword">int</span> limit<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment">/**
+	 * 根据key前缀，罗列对象 默认返回200条记录
+	 * 
+	 * @param bucketName 桶名称
+	 * @param prefix 前缀搜索词
+	 * @return
+	 */</span>
+	<span class="token keyword">public</span> <span class="token class-name">RetObject</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">List</span><span class="token punctuation">&lt;</span><span class="token class-name">ObjectInfo</span><span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span></span> <span class="token function">listObjects</span><span class="token punctuation">(</span><span class="token class-name">String</span> bucketName<span class="token punctuation">,</span> <span class="token class-name">String</span> prefix<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment">/**
+	 * 根据key前缀，罗列对象 根据设定的位移和记录数限制返回 最大上限不超过200条记录
+	 * 
+	 * @param bucketName 桶名称
+	 * @param prefix 前缀搜索词
+	 * @param offset 偏移值
+	 * @param limit 长度
+	 * @return
+	 */</span>
+	<span class="token keyword">public</span> <span class="token class-name">RetObject</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">List</span><span class="token punctuation">&lt;</span><span class="token class-name">ObjectInfo</span><span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span></span> <span class="token function">listObjects</span><span class="token punctuation">(</span><span class="token class-name">String</span> bucketName<span class="token punctuation">,</span> <span class="token class-name">String</span> prefix<span class="token punctuation">,</span> <span class="token keyword">int</span> offset<span class="token punctuation">,</span> <span class="token keyword">int</span> limit<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>输入参数</li></ul> <table><thead><tr><th>参数</th> <th>类型</th> <th>是否必须</th> <th>说明</th></tr></thead> <tbody><tr><td>bucketName</td> <td>String</td> <td>是</td> <td>桶名称</td></tr> <tr><td>prefix</td> <td>String</td> <td>重载,指定方法必须</td> <td>前缀搜索词</td></tr> <tr><td>offset</td> <td>int</td> <td>重载,指定方法必须</td> <td>偏移值（从0起）</td></tr> <tr><td>limit</td> <td>int</td> <td>重载,指定方法必须</td> <td>长度</td></tr></tbody></table> <ul><li>返回参数说明</li></ul> <div class="language- extra-class"><pre class="language-text"><code>List&lt;ObjectInfo&gt;
+</code></pre></div><p>ObjectInfo 参数说明</p> <table><thead><tr><th>参数</th> <th>类型</th> <th>说明</th></tr></thead> <tbody><tr><td>bucket</td> <td>String</td> <td>桶名称</td></tr> <tr><td>key</td> <td>String</td> <td>对象的object key</td></tr> <tr><td>name</td> <td>String</td> <td>对象名称</td></tr> <tr><td>contentSize</td> <td>long</td> <td>对象大小</td></tr> <tr><td>contentType</td> <td>String</td> <td>对象类型</td></tr> <tr><td>lastModify</td> <td>Date</td> <td>对象最后修改时间</td></tr></tbody></table></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-1e128e82 data-v-1e128e82><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-1e128e82><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-1e128e82></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-1e128e82></path></svg></div><!----></div></div>
+    <script src="/assets/js/app.6770edd9.js" defer></script><script src="/assets/js/6.9b59ca2d.js" defer></script><script src="/assets/js/1.74e43295.js" defer></script><script src="/assets/js/57.ae58b540.js" defer></script><script src="/assets/js/21.ce6f9c93.js" defer></script>
+  </body>
+</html>
